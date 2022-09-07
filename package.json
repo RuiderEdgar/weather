@@ -1,20 +1,37 @@
 {
-  "name": "weather",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RuiderEdgar/weather.git"
-  },
-  "keywords": [],
-  "author": "Edgar Rivera <edgar.riveraj@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RuiderEdgar/weather/issues"
-  },
-  "homepage": "https://github.com/RuiderEdgar/weather#readme"
+    "name": "weather",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack --mode=development",
+        "production": "webpack --mode=production"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/RuiderEdgar/weather.git"
+    },
+    "keywords": [],
+    "author": "Edgar Rivera <edgar.riveraj@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/RuiderEdgar/weather/issues"
+    },
+    "homepage": "https://github.com/RuiderEdgar/weather#readme",
+    "devDependencies": {
+        "@babel/cli": "^7.18.10",
+        "@babel/core": "^7.19.0",
+        "@babel/preset-env": "^7.19.0",
+        "babel-loader": "^8.2.5",
+        "css-loader": "^6.7.1",
+        "file-loader": "^6.2.0",
+        "html-webpack-plugin": "^5.5.0",
+        "style-loader": "^3.3.1",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0"
+    },
+    "dependencies": {
+        "core-js": "^3.6.5",
+        "lodash-es": "^4.17.21"
+    }
 }
