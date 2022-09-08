@@ -1,74 +1,135 @@
 @import "reset";
 @import "colors";
 @import "variables";
+@import "theme";
 body {
-    background: $bodyCold;
+    display: flex;
+}
+
+.fondo {
+    margin: 0 auto;
+    min-width: 360px;
+    //Todo cambiar el none del max-width para adaptarlo
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    a {
+        margin: 0.5rem auto;
+        img {
+            width: 3rem;
+        }
+    }
+}
+
+.container-add {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    height: 4rem;
+    width: 100%;
+    box-shadow: $box-shadow-black;
+    margin-bottom: 2rem;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Noto Serif', serif;
+    span {
+        font-size: var(--body-text);
+        grid-column: 2/3;
+        text-align: center;
+    }
+    div {
+        grid-column: 3/4;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 1rem;
+        button {
+            margin: auto 0;
+            width: fit-content;
+            height: fit-content;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            img {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+}
+
+.container-data {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    article {
+        width: 12rem;
+        height: 12rem;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.14);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.5px);
+    }
+}
+
+.temperatura {
+    display: flex;
+    div {
+        margin: auto auto;
+        span {
+            font-size: var(--temperature);
+            font-weight: bold;
+            text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.4);
+            font-family: 'Oswald', sans-serif;
+            color: white;
+        }
+    }
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    .icon-text {
+        margin: auto 0;
+        height: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Noto Serif', serif;
+        img {
+            width: 2rem;
+            height: 2rem;
+        }
+        span {
+            font-size: var(--details);
+        }
+    }
+    .date {
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Heebo', sans-serif;
+        span {
+            font-size: var(--details);
+            padding-left: 0.8rem;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    font-family: 'Heebo', sans-serif;
+    width: 100%;
+    flex-direction: column-reverse;
     height: 100vh;
-}
-
-h1 {
-    color: black;
-    background-color: white;
-}
-
-#container {
-    background: #666 url(images/fondo-nieve.jpg) no-repeat;
-    width: 400px;
-    height: 300px;
-    position: relative;
-}
-
-@-webkit-keyframes nieve {
-    from {
-        top: -10px;
+    padding-bottom: 1rem;
+    span {
+        font-weight: bold;
+        color: white;
+        font-size: var(--body-text);
+        margin: 0 auto;
     }
-    to {
-        top: 450px;
-    }
-}
-
-@-webkit-keyframes copos {
-    0% {
-        -webkit-transform: rotate(-180deg) translate(0px, 0px);
-    }
-    100% {
-        -webkit-transform: rotate(180deg) translate(10px, 75px);
-    }
-}
-
-#snow div {
-    position: absolute;
-    top: -40px;
-    -webkit-animation-name: nieve, copos;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: normal;
-    -webkit-animation-timing-function: ease-in;
-}
-
-.copos {
-    color: #fff;
-    font-size: 1em;
-    position: absolute;
-}
-
-.copos.f1 {
-    left: 40px;
-    -webkit-animation-duration: 5s;
-}
-
-.copos.f2 {
-    font-size: 1.8em;
-    left: 120px;
-    -webkit-animation-duration: 7s;
-}
-
-.copos.f3 {
-    left: 200px;
-    -webkit-animation-duration: 8s;
-}
-
-.copos.f4 {
-    font-size: 1.5em;
-    left: 280px;
-    -webkit-animation-duration: 6s;
 }

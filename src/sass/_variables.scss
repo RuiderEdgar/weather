@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+:root {
+    /*font size for html = fontsize 62.5%*/
+    --smallest: 1.2rem;
+    --details: 1.3rem;
+    /*up to 1.4 or 14px*/
+    --body-text: 1.6rem;
+    /*up to 1.8 or 18px*/
+    --subtitle: 1.8rem;
+    /*up to 2.0*/
+    --title: 2.4rem;
+    /*up to 2.8*/
+    --header: 3.2rem;
+    /*up to 1.8*/
+    --temperature: 5rem;
+}
+
+@media (min-width: 768px) {
+     :root {
+        --smallest: 1.6rem;
+        --details: 1.6rem;
+        /*up to 1.8 or 18px*/
+        --body-text: 2rem;
+        /*up to 2.1 or 21px*/
+        --subtitle: 2.1rem;
+        /*up to 2.4*/
+        --title: 3.4rem;
+        /*up to 3.8*/
+        --header: 4rem;
+        /*up to 4.8*/
+        --temperature: 5.8rem;
+    }
+}

@@ -1,0 +1,11 @@
+@import "colors";
+.themeCold-fondo {
+    height: 100vh;
+    background-image: url("https://acegif.com/wp-content/uploads/gif/snwflks-22.gif#xywh=percent:25,25,50,50");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.themeCold-section {
+    background: $sectionCold;
+}
