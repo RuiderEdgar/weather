@@ -10,44 +10,47 @@
 
 <body class="">
     <!-- tema fondo -->
-    <main class="fondo themeCold-fondo">
-        <header class="header">
-            <a href="https://github.com/RuiderEdgar/weather.git">
-                <img src="./assets/github.png" alt="logo github">
+    <main class="fondo " id="main">
+        <header class="header ">
+            <a href="https://github.com/RuiderEdgar/weather.git ">
+                <img src="./assets/github.png " alt="logo github ">
             </a>
         </header>
-        <nav class="container-add themeCold-section">
-            <span>Ciudad, País</span>
+        <!-- Tema section -->
+        <nav class="container-add " id="container-add">
+            <span id="city">Ciudad, País</span>
             <div>
-                <button>
-                    <img src="./assets/mas.png" alt="icon-add">
+                <button id="btn-add-city">
+                    <img src="./assets/mas.png " alt="icon-add ">
                 </button>
             </div>
         </nav>
-        <!-- tema section -->
-        <section class="container-data ">
-            <article class="temperatura">
+        <!-- tema article -->
+        <section class="container-data " id="container-data">
+            <article class="temperatura ">
                 <div>
-                    <span>12°</span>
+                    <span id="temperatura"></span>
                 </div>
             </article>
-            <article class="weather">
-                <div class="icon-text">
-                    <img src="./assets/github.png" alt="icon-weather">
-                    <span>Caluroso</span>
+            <article class="weather ">
+                <div class="icon-text ">
+                    <img id="iconWeather" src=" " alt="icon-weather ">
+                    <span id="descripcion"></span>
                 </div>
-                <div class="date">
+                <div class="date ">
                     <span id="day"></span>
                     <span id="month"></span>
                 </div>
             </article>
         </section>
         <!-- hora -->
-        <footer class="footer">
+        <footer class="footer ">
             <span id="clock"></span>
         </footer>
     </main>
+    <div class="container-popover">
 
+    </div>
 </body>
 
 </html>

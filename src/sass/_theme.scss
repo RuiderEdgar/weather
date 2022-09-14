@@ -1,4 +1,5 @@
 @import "colors";
+//Cold
 .themeCold-fondo {
     height: 100vh;
     background-image: url("https://acegif.com/wp-content/uploads/gif/snwflks-22.gif#xywh=percent:25,25,50,50");
@@ -8,4 +9,49 @@
 
 .themeCold-section {
     background: $sectionCold;
+    color: $titleCold;
+    font-weight: bold;
+}
+
+.themeCold-article {
+    color: $textCold;
+    font-weight: 900;
+}
+
+//Hot
+.themeHot-fondo {
+    height: 100vh;
+    background-image: url("https://acegif.com/wp-content/uploads/2022/fzk5d/1-heat-and-naighbours-acegif.gif#xywh=percent:25,25,50,50");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.themeHot-section {
+    background: $sectionHot;
+    color: $titleHot;
+    font-weight: bold;
+}
+
+.themeHot-article {
+    color: $textHot;
+    font-weight: 900;
+}
+
+//Good
+.themeGood-fondo {
+    height: 100vh;
+    background-image: url("https://media4.giphy.com/media/QJd6DWYG1DRA6mImIw/giphy.gif?cid=ecf05e47q26vw7dt05kasdnyea3juuexni8c3tebv92o5pnx&rid=giphy.gif&ct=g#xywh=percent:25,25,50,50");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.themeGood-section {
+    background: $sectionGood;
+    color: $titleGood;
+    font-weight: bold;
+}
+
+.themeGood-article {
+    color: $textGood;
+    font-weight: 900;
 }
