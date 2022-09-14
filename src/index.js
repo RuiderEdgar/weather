@@ -134,14 +134,17 @@ const succes = ubicacion => {
                 document.querySelector("#main").classList.add('themeCold-fondo');
                 document.querySelector("#container-add").classList.add('themeCold-section');
                 document.querySelector("#container-data").classList.add('themeCold-article');
+                document.querySelector("#main-popover").classList.add('themeCold-section');
             } else if (temperature >= 27) {
                 document.querySelector("#main").classList.add('themeHot-fondo');
                 document.querySelector("#container-add").classList.add('themeHot-section');
                 document.querySelector("#container-data").classList.add('themeHot-article');
+                document.querySelector("#main-popover").classList.add('themeHot-section');
             } else {
                 document.querySelector("#main").classList.add('themeGood-fondo');
                 document.querySelector("#container-add").classList.add('themeGood-section');
                 document.querySelector("#container-data").classList.add('themeGood-article');
+                document.querySelector("#main-popover").classList.add('themeGood-section');
             }
         })
         .catch(err => console.error(err));
@@ -161,6 +164,6 @@ navigator.geolocation.getCurrentPosition(succes, error, options);
 
 //boton cambiar ciudad
 const btnAdd = document.querySelector("#btn-add-city");
-btnAdd.addEventListener('clic', () => {
-
+btnAdd.addEventListener('click', () => {
+    document.querySelector("#container-popover").style.display = "flex";
 })

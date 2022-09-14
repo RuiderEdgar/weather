@@ -48,8 +48,26 @@
             <span id="clock"></span>
         </footer>
     </main>
-    <div class="container-popover">
-
+    <div class="container-popover" id="container-popover">
+        <section id="main-popover" class="main-popover">
+            <header>
+                <h1>Cambiar el lugar</h1>
+            </header>
+            <form action="" id="changePlace" class="containerChangePlace">
+                <label for="country">
+                    <span>País</span>
+                    <input type="text" name="country" id="country" autocomplete="country-name" placeholder="México" required>
+                </label>
+                <label for="city">
+                    <span>Ciudad</span>
+                    <input type="text" name="city" id="city" placeholder="Iztapalapa" required>
+                </label>
+                <div>
+                    <button id="btn-cancel" class="btnCancel" submit="false">Cancelar</button>
+                    <button id="btn-place" class="btnPlace" submit="false">Cambiar Lugar</button>
+                </div>
+            </form>
+        </section>
     </div>
 </body>
 
